@@ -6,7 +6,10 @@ const subtract = function(a, b) {
 	return a - b;
 };
 
-const sum = function() {
+const sum = function(arr) {
+  return arr.reduce((accum, current) => {
+    return accum + current;
+  }, 0);
 	
 };
 
