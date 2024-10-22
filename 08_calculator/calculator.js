@@ -13,11 +13,22 @@ const sum = function(arr) {
 	
 };
 
-const multiply = function() {
-
+const multiply = function(arr) {
+  return arr.reduce((accum, current) => {
+    return accum * current;
+  }, 1);
+	
 };
 
-const power = function() {
+const power = function(base, power) {
+  if (power === 0) {
+    return 1;
+  }
+  let res = 1;
+  for (let i = 1; i <= power; i++) {
+    res *= base;
+  }
+  return res;
 	
 };
 
